@@ -7,7 +7,8 @@ When used with the command line flag `-d` it can parse strings which contain pro
 
 So `date -d"next thursday 8:30 pm"` will output something like "Thu 09 Feb 2023 08:30:00 PM"
 
-**Question: Can it be made much more "intelligent" by wrapping it in a command line preprocessor, based only on the built-ins available to the Linux shell (for example bash, better yet zsh)?**
+**Question: Can it be made a bit more "intelligent" by wrapping it in a command line preprocessor, based only on the built-ins available to the Linux shell (for example bash, better yet zsh)?**
+
 In other words, can it not explode if the string was instead: `"Two years from now, on halloween, at 730 in the morning"`?
 
 This repository is an attempts to answer **Yes**  to the above question. The `dated` command line utility is written in and for `zsh` and uses zsh built-in machinery (almost exclusivelly) before handing the preprocessed text to `date -d`.   So, if called at the time of this writing, 
