@@ -1,6 +1,6 @@
 # `dated`, a `date` on steroids
 ## ZSH exoskeleton for the command line "date" utility
-### *Expand the ability of date to handle natural language time references (in English)*
+### *Expand the ability of date to handle natural language time references (in English)*, using only the shell built-ins.
 
 The command line utility `date` from [GNU coreutils](https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html) is familiar to everyone who uses the Linux command line.
 When used with the command line flag `-d` it can parse strings which contain properly formatted datetime constructs and if successful, output the resulting datetime to the standard output, formatted as per additional formatting flags if supplied.
