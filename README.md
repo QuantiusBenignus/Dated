@@ -1,4 +1,4 @@
-# Dated, a `date` on steroids
+# `dated`, a `date` on steroids
 ## ZSH exoskeleton for the command line "date" utility
 ### *Expand the ability of date to handle natural language time references (in English)*
 
