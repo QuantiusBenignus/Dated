@@ -43,10 +43,9 @@ str=" $1 "
  #Just the ones that are going to mess up our date parsing:
  str="${str//[$'\t\r\n']}"
  str="${str:l}"
-echo "$str"
-    for stw in "." "," "?" "!" ";" "'"; do ; str="${str//$stw}" ; done
+ for stw in "." "," "?" "!" ";" "'"; do ; str="${str//$stw}" ; done
  #Isolate the time reference and remove possible vagueness 
- #(, oppinionated but adjustable. Only the future considered) 
+ #(oppinionated but adjustable. Only the future considered) 
     dt=($(date +%Y%n%_m%n%e%n%u%n%k))
     #dt[1]=y, dt[2]=m, dt[3]=d, dt[4]=dw, dt[5]=h
     #keep the number stuck to its unit so that one can say "3rd of March at 22 hours 30 minutes":
