@@ -36,7 +36,10 @@ exit 0
 
 if [[ $# -gt 0 ]] ; then
 
-case "$1" in -h|--help) show_help ;; esac
+case "$1" in 
+          -h|--help) show_help ;; 
+          @[0-9]*) echo $(date -d "$1" "${@:2}") ; exit 0 ;;
+esac
 
 str=" $1 "
 
