@@ -11,7 +11,7 @@ So `date -d "next thursday 8:30 pm"` will output something like "Thu 09 Feb 2023
 
 In other words, can it **not explode** if the string was instead: `"Two years from now, on halloween, at 730 in the morning"`?
 
-This repository is an attempts to answer **Yes**  to the above question. The `dated` command line utility is written in and for `zsh` and uses zsh built-in machinery (almost exclusivelly) before handing the preprocessed text to `date -d`.   So, if called at the time of this writing, 
+This repository is an attempt to answer **Yes**  to the above question. The `dated` command line utility is written in and for `zsh` and uses zsh built-in machinery (almost exclusivelly) before handing the preprocessed text to `date -d`.   So, if called at the time of this writing, 
 ```
 dated "Two years from now, on halloween, at 730 in the morning"
 ```  
